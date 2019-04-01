@@ -26,7 +26,7 @@ def draw_on_image(file_path):
     face_locations = face_recognition.face_locations(image,number_of_times_to_upsample=2)
 
     number_of_faces = len(face_locations)
-    print("I found {} face(s) in this photograph.".format(number_of_faces))
+    print("{} detected face(s) are in photograph.".format(number_of_faces))
 
     # Load the image into a Python Image Library object so that we can draw on top of it and display it
     pil_image = PIL.Image.fromarray(image)

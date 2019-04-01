@@ -2,6 +2,7 @@ import face_recognition
 import PIL.Image
 import PIL.ImageDraw
 
+
 def encode(file_name):
     # Load the known images
     image_of_person = face_recognition.load_image_file(file_name)
@@ -14,5 +15,6 @@ def encode(file_name):
     known_face_encoding = person_face_encoding
 
     print("Encodings placed in known faces array")
-    print(f"Encoding info: {known_face_encoding}")
+    #print(f"Encoding info: {known_face_encoding}")
+    print(type(known_face_encoding))
     return known_face_encoding
