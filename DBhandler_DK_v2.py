@@ -53,7 +53,7 @@ def get_row_count():
         continue
     return i[0]
 
-def get_encode():
+def get_encodings():
     #returns ALL id and encode with two list
     id = []
     encode = []
