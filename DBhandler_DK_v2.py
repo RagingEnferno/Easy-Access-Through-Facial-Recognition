@@ -65,27 +65,3 @@ def get_encode():
         encode.append(row[1])       #encode
     mydb.commit()
     return id, encode
-
-
-
-
-
-
-#TEST
-
-add_new_user(123, "12345")
-add_new_user(1234, "23456")
-add_new_user(12345, "34567")
-print(get_row_count())
-##change_pic(123,67890)
-####print(get_row_count())
-####delete_user(123)
-####delete_user(123)
-##print(get_row_count())
-####print(check_user_id(1234))
-##
-print(get_encode())
-##
-
-
-
